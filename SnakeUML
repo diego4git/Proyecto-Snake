@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-06-15T06:56:40.252Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36" etag="7GhnFzFkOvwZ7ojXS_U7" version="14.7.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-15T07:11:45.531Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36" etag="Yw584IFEpzIXcGgiUBmz" version="14.7.8" type="github">
   <diagram id="nCDyRrAO4qsE_85jz1AO" name="Page-1">
-    <mxGraphModel dx="2374" dy="1134" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2489" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -93,6 +93,63 @@
         </mxCell>
         <mxCell id="FKDD62lDrm11eKq2B0rx-35" value="+CampoJuego(controladorGUICampoJuego:ControladorGUICampoJuego,guiCampoJuego:GUICampoJuego)&#xa;+setFiguras(): void&#xa;+crearSerpiente(): void&#xa;+getSerpiente(): ArrayList&#xa;+crearComida(): void&#xa;+getComida(): void&#xa;+crearParedes(): void&#xa;+getParedes(indice:int): Pared&#xa;+eliminarComida(): void&#xa;+colisionComida(): boolean&#xa;+colisionPared(): boolean&#xa;+colisionCuerpo(): boolean&#xa;+preguntarEstadistica(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="FKDD62lDrm11eKq2B0rx-32">
           <mxGeometry y="148" width="590" height="202" as="geometry" />
+        </mxCell>
+        <mxCell id="FKDD62lDrm11eKq2B0rx-36" value="PanelCampoJuego" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-790" y="210" width="360" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FKDD62lDrm11eKq2B0rx-37" value="-controladorGUICampoJuego: ControladorGUICampoJuego" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="FKDD62lDrm11eKq2B0rx-36">
+          <mxGeometry y="26" width="360" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="FKDD62lDrm11eKq2B0rx-38" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="FKDD62lDrm11eKq2B0rx-36">
+          <mxGeometry y="52" width="360" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="FKDD62lDrm11eKq2B0rx-39" value="+PanelCampoJuego()&#xa;+paint(g:Graphics): void&#xa;+setControlador(controlador: ControladorGUICampoJuego): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="FKDD62lDrm11eKq2B0rx-36">
+          <mxGeometry y="60" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FKDD62lDrm11eKq2B0rx-40" value="GUIEstadistica" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-755" y="730" width="280" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="FKDD62lDrm11eKq2B0rx-41" value="-controladorEstadistica: ControladorGUIEstadistica" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="FKDD62lDrm11eKq2B0rx-40">
+          <mxGeometry y="26" width="280" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="FKDD62lDrm11eKq2B0rx-42" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="FKDD62lDrm11eKq2B0rx-40">
+          <mxGeometry y="52" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="FKDD62lDrm11eKq2B0rx-43" value="+GUIEstadistica()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="FKDD62lDrm11eKq2B0rx-40">
+          <mxGeometry y="60" width="280" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="FKDD62lDrm11eKq2B0rx-44" value="GUICampoJuego" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-775" y="590" width="330" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FKDD62lDrm11eKq2B0rx-45" value="-controladorGUICampoJuego: ControladorGUICampoJuego" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="FKDD62lDrm11eKq2B0rx-44">
+          <mxGeometry y="26" width="330" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="FKDD62lDrm11eKq2B0rx-46" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="FKDD62lDrm11eKq2B0rx-44">
+          <mxGeometry y="52" width="330" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="FKDD62lDrm11eKq2B0rx-56" value="+GUICampoJuego()" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="FKDD62lDrm11eKq2B0rx-44">
+          <mxGeometry y="60" width="330" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FKDD62lDrm11eKq2B0rx-48" value="GUIMenuPrincipal" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-790" y="420" width="340" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="FKDD62lDrm11eKq2B0rx-49" value="-controladorGUIMenuPrincipal: ControladorGUIMenuPrincipal" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="FKDD62lDrm11eKq2B0rx-48">
+          <mxGeometry y="30" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="FKDD62lDrm11eKq2B0rx-50" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="FKDD62lDrm11eKq2B0rx-48">
+          <mxGeometry y="56" width="340" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="FKDD62lDrm11eKq2B0rx-51" value="+GUIMenuPrincipal()&#xa;+escuchar(manejador:ActionListener): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="FKDD62lDrm11eKq2B0rx-48">
+          <mxGeometry y="64" width="340" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="FKDD62lDrm11eKq2B0rx-52" value="PanelEstadisticas" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-745" y="80" width="270" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="FKDD62lDrm11eKq2B0rx-54" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="FKDD62lDrm11eKq2B0rx-52">
+          <mxGeometry y="26" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="FKDD62lDrm11eKq2B0rx-55" value="+PanelEstadisticas()&#xa;+escuchar(manejador:ActionListener): void&#xa;setDatosTablaEstadistica(datos: String[][]): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="FKDD62lDrm11eKq2B0rx-52">
+          <mxGeometry y="34" width="270" height="56" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
